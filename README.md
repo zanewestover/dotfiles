@@ -16,15 +16,6 @@ you see fit. YMMV.
 Compatibility
 -------------
 
-I am a Zsh user. This repo goes in conjunction with my
-[fork of oh-my-zsh][zfork].
-
-[zfork]: https://github.com/tangledhelix/oh-my-zsh
-
-Using Bash does not need any external repos. 
-I used Bash for many years, and those files are fairly
-mature, but I am no longer paying a lot of attention to them.
-
 I have used this setup with macOS, Solaris, FreeBSD, and Linux systems.
 Today I primarily use macOS and Linux (Debian and Redhat families).
 
@@ -34,32 +25,16 @@ you don't. Try [iTerm2][] instead.
 
 [iterm2]: http://sites.google.com/site/iterm2home/
 
-I have written two blog posts on the subject of iTerm and iTerm2. Give them a
-read; color support is only one of several good reasons to switch.
-
-[iTerm > Terminal](http://tangledhelix.com/blog/2010/11/20/iterm-terminal/)
-
-[iTerm2 > iTerm](http://tangledhelix.com/blog/2010/12/06/iterm2-iterm/)
-
-Shell colors
-------------
-
-The colors in the Zsh shell prompts may assume a certain color scheme in the
-terminal; they may look odd in other schemes.
 
 Installation
 ------------
-
-I used to use the script noted below. I haven't been lately and it may be it
-no longer works properly. I've been using ansible-playbook and the code under
-the ansible directory lately. YMMV.
 
 The Ansible setup requires a `hosts` inventory file. That is not present in this
 repository as it's specific to me. See Ansible's documentation for info about the
 format of the inventory file. (There is more than one available format.)
 
     umask 0022
-    git clone https://github.com/tangledhelix/dotfiles.git ~/.dotfiles
+    git clone https://github.com/zanewestover/dotfiles.git ~/.dotfiles
 
 To install my dotfiles as *your* dotfiles, you can create symlinks with
 `./install.pl all`. If you do *not* run that command, everything will be
